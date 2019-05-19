@@ -1,10 +1,6 @@
-import sys
 
-width = 0
-radius = 0
 PI = 3.14159  #Define the variable PI
-i = 0
-num = 0
+
 
 #Print the menu of calculations
 print("Calculations")
@@ -51,8 +47,6 @@ elif (x ==3):
 elif (x == 4):
     print("\nGoodbye!")
     quit
-    
-    
 
 else:
     print("Invalid Option")

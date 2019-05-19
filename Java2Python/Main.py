@@ -1,8 +1,9 @@
+import sys
 
 width = 0
 radius = 0
 PI = 3.14159  #Define the variable PI
-i = "0"
+i = 0
 num = 0
 
 #Print the menu of calculations
@@ -10,8 +11,9 @@ print("Calculations")
 print("\n1. Calculate area of a square")
 print("\n2. Calculate area of a circle")
 print("\n3. Display palindromes up to 1,000")
+print("\n4. Exit")
 
-x = int(input("Enter an option: "))  #Declares the variable x and asks the user to define the input value
+x = int(input("\nEnter an option: "))  #Declares the variable x and asks the user to define the input value
 
 #Function to calculate the area of a circle
 def areaCircle(radius):
@@ -45,6 +47,12 @@ elif (x ==3):
     for i in range (0,1001):
         if (isPalindrome(i)):   #Calls the isPalindrome function to check the number is a palindrome
             print(i)            #If the number is a palindrome it prints the number to screen
+            
+elif (x == 4):
+    print("\nGoodbye!")
+    quit
+    
+    
 
 else:
     print("Invalid Option")
